@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply min-w-0 scroll-smooth;
+  }
+
+  body {
+    @apply bg-body font-montserrat text-black;
+  }
+
+  body.scroll-hidden {
+    @apply overflow-hidden;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-10 md:py-[60px] xl:py-20;
+  }
+
+  .btn {
+    background: linear-gradient(180deg, #0100ff 0%, #00005a 100%);
+    box-shadow: 0px 15px 31px -13px #00005a;
+    @apply rounded-xl border-0 px-4 py-5 text-center text-[13px] font-bold uppercase text-white duration-300 md:text-base;
+  }
+
+  .btn.colored-hover:hover {
+    background: white;
+    @apply text-accent;
+  }
+
+  .btn.scaled-hover:hover {
+    @apply scale-[1.1];
+  }
+  .title {
+    @apply text-2xl font-black uppercase leading-[100%] text-white md:text-[32px] xl:text-5xl;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold uppercase leading-[1.2] md:text-[32px] xl:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply text-[17px] font-bold uppercase leading-[1.3];
+  }
+
+  .paragraph-text {
+    @apply text-[17px] font-normal leading-[1.45] text-black;
+  }
+}
+
+.gutter-stable {
+  scrollbar-gutter: stable;
+}

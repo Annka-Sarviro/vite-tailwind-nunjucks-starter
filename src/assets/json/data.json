@@ -1,0 +1,52 @@
+{
+  "page": {
+    "lang": "en",
+    "title": "Title",
+    "canonical": "https://canonical-url.com/",
+    "description": "Site description"
+  },
+  "header": {
+    "id": "header",
+    "title": "Header title",
+    "items": [
+      {
+        "id": "item1",
+        "title": "Hero",
+        "link": "#hero"
+      },
+      {
+        "id": "item2",
+        "title": "Services",
+        "link": "#services"
+      }
+    ]
+  },
+  "hero": {
+    "id": "hero",
+    "title": "Hero title",
+    "subtitle": "Hero subtitle",
+    "text": "Hero text lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "cards": [
+      {
+        "id": "card1",
+        "title": "About"
+      },
+      {
+        "id": "card2",
+        "title": "We are"
+      }
+    ],
+    "btn": {
+      "text": "Open modal Button"
+    }
+  },
+  "footer": {
+    "title": "Footer title"
+  },
+  "components": {},
+  "modal": {
+    "id": "modalForm",
+    "btnCloseAria": "кнопка закриття модального вікна",
+    "title": "Modal title"
+  }
+}

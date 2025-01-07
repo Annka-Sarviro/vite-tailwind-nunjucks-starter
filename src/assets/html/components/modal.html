@@ -1,0 +1,24 @@
+{% set modalId = modal.id %}
+<div class="backdrop is-hidden smOnly:px-5" data-modal>
+  <div class="modal text-black-light bg-white">
+    <button
+      class="modal-close-btn"
+      type="button"
+      data-modal-close
+      aria-label="{{modal.btnCloseAria}}"
+    >
+      <svg
+        class="modal-btn-close-svg md:h-8 md:w-8"
+        width="24"
+        height="24"
+        aria-label="{{modal.btnCloseAria}}"
+      >
+        <use xlink:href="/spritemap.svg#close_menu"></use>
+      </svg>
+    </button>
+
+    <h2 class="mb-9 text-[20px] font-bold leading-[1.2] md:mb-9 md:text-[24px]">
+      {{ modal.title }}
+    </h2>
+  </div>
+</div>
