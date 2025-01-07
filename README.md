@@ -6,7 +6,6 @@
 npm install -g nodemon - глобально
 
 ```
-
 npm install --save-dev nodemon - локально для цього проєкту
 
 ## 1) Запуск збірки
@@ -47,7 +46,6 @@ pnpm build / yarn build / npm run build
 - В збірці використовується CSS framework [Tailwind](https://tailwindcss.com/docs/installation) та
   CSS з nesting.
 
-- В збірці є автоматична оптимізація усіх зображень.
 
 - В збірці є автоматичне створення WEBP зображень. Покладіть jpg або png зображення і збірка
   автоматично створить webp.
