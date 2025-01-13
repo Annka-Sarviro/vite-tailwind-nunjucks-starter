@@ -1,27 +1,25 @@
 {% set section = hero %}
 <section id="{{section.id}}" class="{{section.id}} section !pt-0">
   <div class="container">
-    <h2 class="section-title mb-8 md:mb-6 md:w-[600px] xl:mb-[52px]">{{section.title}}</h2>
+    <h1 class="section-title mb-8 md:mb-6 md:w-[600px] xl:mb-10">{{section.title}}</h1>
     <ul
-      class="mb-8 flex flex-col gap-4 md:mb-[41px] md:flex md:flex-row md:flex-wrap md:justify-center md:gap-8 xl:mb-12 xl:justify-between"
+      class="mb-8 flex flex-col gap-4 md:flex md:flex-row md:flex-wrap md:justify-center md:gap-8 xl:mb-12"
     >
       {% for item in section.cards %}
       <li
-        class="programming-card shadow-grey flex h-[130px] w-full flex-col justify-end rounded-xl px-[43px] pb-[19px] md:h-[160px] md:w-[336px] md:pb-[44px] xl:w-[370px]"
+        class="programming-card flex h-10 w-full flex-col justify-end rounded-xl px-10 pb-5 shadow-sm shadow-amber-400 transition-all hover:bg-amber-400/20 md:h-20 md:w-40"
       >
-        <h3 class="section-subtitle !text-base !leading-5">{{item.title}}</h3>
+        <h3 class="section-subtitle text-base leading-5">{{item.title}}</h3>
       </li>
       {% endfor %}
     </ul>
     <ul class="wrapp_grid">
       <li class="grid_item smOnly:mb-2">
-        <h3 class="section-subtitle mb-2 !text-[17px] !leading-[22px] md:mb-3">
-          {{section.subtitle}}
-        </h3>
+        <h3 class="section-subtitle mb-2 text-base md:mb-3">{{section.subtitle}}</h3>
         <p class="paragraph">{{section.text}}</p>
       </li>
       {% for item in section.textList %}
-      <li class="w-[130px] pt-[54px] md:w-[152px] xl:w-[200px]">
+      <li class="w-[130px] pt-12 md:w-[152px] xl:w-[200px]">
         <p class="paragraph-text">{{item}}</p>
       </li>
       {% endfor %}

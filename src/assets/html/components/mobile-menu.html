@@ -5,16 +5,18 @@
   </svg>
 </button>
 <div class="mobile-menu" data-menu>
-  <button
-    class="mobile-menu-close"
-    type="button"
-    aria-label="{{section.btnCloseAria}}"
-    data-close-menu-btn
-  >
-    <svg width="24" height="24" aria-label="{{svgCloseAria}}">
-      <use xlink:href="/spritemap.svg#close_menu"></use>
-    </svg>
-  </button>
+  <div class="container relative">
+    <button
+      class="mobile-menu-close"
+      type="button"
+      aria-label="{{section.btnCloseAria}}"
+      data-close-menu-btn
+    >
+      <svg width="24" height="24" aria-label="{{svgCloseAria}}">
+        <use xlink:href="/spritemap.svg#close_menu"></use>
+      </svg>
+    </button>
 
-  {% include './nav-menu.html' %}
+    {% include './nav-menu.html' %}
+  </div>
 </div>

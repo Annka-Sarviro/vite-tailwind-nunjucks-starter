@@ -16,8 +16,8 @@
       },
       {
         "id": "item2",
-        "title": "Services",
-        "link": "#services"
+        "title": "Gallery",
+        "link": "#gallery"
       }
     ]
   },
@@ -40,8 +40,32 @@
       "text": "Open modal Button"
     }
   },
+  "gallery": {
+    "id": "gallery",
+    "title": "Приклад використання зображень",
+    "cards": [
+      {
+        "image": {
+          "url": "no_image",
+          "alt": "Немає зображення"
+        },
+        "name": "Зображення 1",
+        "data": "10.01.2025",
+        "text": "Перше зображення"
+      },
+      {
+        "image": {
+          "url": "no_image_2",
+          "alt": "Немає зображення"
+        },
+        "name": "Зображення 2",
+        "data": "11.01.2025",
+        "text": "Друге зображення"
+      }
+    ]
+  },
   "footer": {
-    "title": "Footer title"
+    "title": "Sarviro@2025"
   },
   "components": {},
   "modal": {

@@ -19,15 +19,14 @@ module.exports = {
         body: '#ffffff', // bg-body
         white: {
           DEFAULT: '#ffffff', // *-white
-          // fa: '#fafafa', // *-white-fa
+          // '20': '#fafafa', // *-white-20
         },
         black: {
           DEFAULT: '#000000', // *-black
-          // '01': '#010101', // *-black-01
-          // '20': '#202020',
+          // '50': '#010101', // *-black-50
         },
         accent: {
-          DEFAULT: '#0100ff', // *-accent
+          DEFAULT: '#d97706', // *-accent
         },
       },
       // BACKGROUND IMAGES

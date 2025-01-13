@@ -12,7 +12,7 @@
   }
 
   .mobile-menu {
-    @apply pointer-events-none invisible fixed inset-x-0 top-0 z-50 h-screen overflow-y-scroll bg-white px-6 pt-2 text-center opacity-0 duration-300;
+    @apply pointer-events-none invisible fixed inset-x-0 top-0 z-50 h-screen overflow-y-auto bg-white px-6 pt-2 text-center opacity-0 duration-300;
   }
 
   .mobile-menu.is-open {

@@ -1,0 +1,86 @@
+{% set section = gallery %}
+<section class="{{section.id}} section" id="{{section.id}}">
+  <div class="container">
+    <h2 class="section-title mb-8 md:mb-10">{{section.title}}</h2>
+    <div class="gallery-wrapper mb-6 p-6 md:mb-8">
+      <ul class="flex gap-6">
+        {% for item in section.cards %}
+
+        <li class="h-full w-1/2 rounded-xl bg-amber-50 p-8 shadow-sm shadow-amber-200">
+          <div class="flex flex-col items-center gap-2">
+            <picture>
+              <source
+                srcset="
+                  ./assets/images/gallery/{{item.image.url}}_desktop@1x.webp 1x,
+                  ./assets/images/gallery/{{item.image.url}}_desktop@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./assets/images/gallery/{{item.image.url}}_desktop@1x.jpg 1x,
+                  ./assets/images/gallery/{{item.image.url}}_desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(min-width: 1024px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/gallery/{{item.image.url}}_tablet@1x.webp 1x,
+                  ./assets/images/gallery/{{item.image.url}}_tablet@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px) and (max-width: 1023px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/gallery/{{item.image.url}}_tablet@1x.jpg 1x,
+                  ./assets/images/gallery/{{item.image.url}}_tablet@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 768px) and (max-width: 1023px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/gallery/{{item.image.url}}_mobile@1x.webp 1x,
+                  ./assets/images/gallery/{{item.image.url}}_mobile@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/gallery/{{item.image.url}}_mobile@1x.jpg 1x,
+                  ./assets/images/gallery/{{item.image.url}}_mobile@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(max-width: 767px)"
+              />
+
+              <img
+                src="./assets/images/gallery/{{item.image.url}}_mobile@1x.jpg"
+                srcset="./assets/images/gallery/{{item.image.url}}_mobile@2x.jpg 2x"
+                alt="{{item.image.alt}}"
+                width="200"
+                height="200"
+                loading="lazy"
+                class="w-full"
+              />
+            </picture>
+
+            <h3 class="section-subtitle">{{item.name}}</h3>
+            <p class="paragraph-text text-amber-900">{{item.data}}</p>
+          </div>
+          <p class="paragraph-text mt-1 md:mt-6">{{item.text}}</p>
+        </li>
+
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
